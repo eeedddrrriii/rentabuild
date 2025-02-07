@@ -14,7 +14,7 @@
             color: #333;
         }
         header {
-            background-color: #4CAF50; /* Light green color */
+            background-color: #4CAF50;
             color: white;
             padding: 1rem;
             text-align: center;
@@ -46,18 +46,29 @@
         .building-info p {
             margin: 0.5rem 0;
         }
-        .rent-button {
-            background-color: #4CAF50;
+        .rent-button, .view-button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
             color: white;
             border: none;
-            padding: 0.75rem 1.5rem;
-            margin-top: 1rem;
-            cursor: pointer;
             border-radius: 5px;
-            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+        }
+        .rent-button {
+            background-color: #4CAF50;
         }
         .rent-button:hover {
             background-color: #45a049;
+        }
+        .view-button {
+            background-color: #007BFF;
+        }
+        .view-button:hover {
+            background-color: #0056b3;
         }
         footer {
             background-color: #333;
@@ -76,7 +87,7 @@
         <p>1 Available Building</p>
     </header>
     <main>
-        <section class="building-etalase"></section>
+        <section class="building-etalase">
             <div class="building-card">
                 <img src="https://www.sutomo-mdn.sch.id/img/intro2.jpg" alt="Medan Building">
                 <div class="building-info">
@@ -86,6 +97,9 @@
                     <p><strong>Price:</strong> Rp. 271.000.000/month</p>
                     <a href="formpay_htmlcssjs/payment.html">
                         <button class="rent-button">Rent Now</button>
+                    </a>
+                    <a href="https://360-architecture.com/360/sonneveld/" target="_blank">
+                        <button class="view-button">View Building</button>
                     </a>
                 </div>
             </div>
